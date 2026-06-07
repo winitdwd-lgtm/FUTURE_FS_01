@@ -1,36 +1,147 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌌 Vineet Dharwad - Professional Portfolio v2
 
-## Getting Started
+[![Next.js Version](https://img.shields.io/badge/Next.js-v16.2-black?style=flat-square&logo=next.js)](https://nextjs.org/)
+[![React Version](https://img.shields.io/badge/React-v19.0-blue?style=flat-square&logo=react)](https://react.dev/)
+[![TailwindCSS Version](https://img.shields.io/badge/TailwindCSS-v4.0-38bdf8?style=flat-square&logo=tailwind-css)](https://tailwindcss.com/)
+[![Framer Motion](https://img.shields.io/badge/Framer_Motion-v12.3-ff007f?style=flat-square&logo=framer)](https://www.framer.com/motion/)
 
-First, run the development server:
+A premium, interactive, and high-performance developer portfolio website built using the latest web technologies. This application showcases the journey, technical capabilities, certifications, projects, and achievements of **Vineet Dharwad**, a Computer Science student and Full-Stack Developer & Analyst.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+🔗 **Live GitHub Repository:** [https://github.com/winitdwd-lgtm/FUTURE_FS_01](https://github.com/winitdwd-lgtm/FUTURE_FS_01)
+
+---
+
+## ✨ Design & Aesthetic Philosophy
+
+The project is built around **rich aesthetics** and **micro-interactions** to create a stunning first impression:
+*   **Geometric Shape Hero Landing:** Elegant floating shapes with smooth floating physics and blur effects that animate on load.
+*   **Cosmic Background Parallax:** Dynamic parallax star field and nebulas (`cosmic.css`) to give a depth-filled, futuristic vibe.
+*   **Glassmorphic Card UI:** Sleek semi-transparent borders with subtle backdrops blending seamlessly into the dark color palette.
+*   **3D Tilt Certifications Scroll:** An immersive scroll layout utilizing 3D tilt effects to display professional credentials.
+*   **Micro-Animations:** Hover states, scroll fading, and active link transitions for a premium, responsive feel.
+
+---
+
+## 🛠️ Technology Stack
+
+| Technology / Library | Purpose |
+| :--- | :--- |
+| **Next.js 16 (App Router)** | Modern React framework for routing, performance, and structure. |
+| **React 19** | Core frontend library utilizing latest state patterns. |
+| **Tailwind CSS v4** | Custom-tailored styles, HSL color tokens, and animations. |
+| **Framer Motion 12** | Advanced animations, page transitions, and floating shapes. |
+| **Base UI / Radix UI** | Accessible, unstyled UI primitives. |
+| **Lucide Icons** | Consistent, vector-based iconography. |
+| **Shadcn UI** | High-quality accessible components (Buttons, Cards). |
+
+---
+
+## 📂 Project Structure
+
+```
+portfolio-v2/
+├── public/                 # Static assets (Favicons, SVG graphics)
+├── src/
+│   ├── app/
+│   │   ├── favicon.ico     # App favicon
+│   │   ├── globals.css     # Global stylesheets and Tailwind CSS v4 directives
+│   │   ├── layout.tsx      # Core HTML structure and font loading (Outfit, Inter)
+│   │   └── page.tsx        # Main application file & Portfolio sections
+│   ├── components/
+│   │   └── ui/             # Reusable interactive components
+│   │       ├── blur-fade.tsx                  # Fading scroll animation wrapper
+│   │       ├── button.tsx                     # Styled Shadcn button
+│   │       ├── container-scroll-animation.tsx # 3D scroll tilt list wrapper
+│   │       ├── cosmic.css                     # Custom animations for cosmic background
+│   │       ├── parallax-cosmic-background.tsx # Interactive starfield & nebulas
+│   │       ├── personal-landing.tsx           # Contact form & social links
+│   │       └── shape-landing-hero.tsx         # Elegant floating geometric shapes hero
+│   └── lib/
+│       └── utils.ts        # CN utility for merging Tailwind classes
+├── components.json         # Shadcn configuration
+├── next.config.js          # Next.js configuration (with static export output: 'export')
+├── package.json            # Node.js dependencies & scripts
+├── tsconfig.json           # TypeScript configuration
+└── tailwind.config.js      # Styling configuration
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🚀 Key Sections
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 1. 🌌 Hero Geometric Banner
+Features beautiful title text ("Vineet Dharwad — Engineer & Innovator") backed by abstract floating glassmorphic shapes that react smoothly to transitions.
 
-## Learn More
+### 2. 🧠 About, Education & Core Skills
+*   **Summary:** Highlights Vineet's profile as a detail-oriented Computer Science student focused on problem-solving.
+*   **Education:** Bachelor of Engineering, Computer Science at **Global Academy of Technology** (2024 - 2028).
+*   **Technical Skill Taxonomy:** Organizes skills into Programming Languages, Web Development, Frameworks, Data & Databases, Core Concepts, and Developer Tools.
 
-To learn more about Next.js, take a look at the following resources:
+### 3. 💼 Experience & Leadership Timeline
+Showcases role descriptions and achievements in:
+*   **Marketing Specialist:** IT Virtuoso Club | Global Academy of Technology
+*   **Software Engineering Job Simulation:** JPMorgan Chase
+*   **Data Analytics Job Simulation:** Deloitte Australia
+*   **GenAI Powered Data Analytics Simulation:** Tata
+*   **Operations Job Simulation:** Goldman Sachs
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 4. 📜 Professional Accreditations (Certifications)
+A stunning grid of verified certifications displayed in a custom 3D scrolling component, including certifications from **Infosys Springboard**, **Oracle (AI Foundations Associate)**, **Google / Credly (Agent Development Kit)**, **IBM SkillsBuild**, and **Unstop**.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 5. 🛠️ Featured Engineering (Projects)
+Exhibits core projects with descriptions and specific technology tags:
+*   **Full Stack Web Application:** (HTML, CSS, JS, React.js, REST APIs)
+*   **Backend Application:** (Spring Boot, SQL, Java, MVC)
+*   **AI/Data Analytics Project:** (Python, EDA, ML, Data Visualization)
 
-## Deploy on Vercel
+### 6. ✉️ Interactive Contact Card
+A messaging panel built with validation and visual feedback to allow visitors to directly message Vineet, alongside high-fidelity links to GitHub, LinkedIn, and Email.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## ⚙️ Getting Started
+
+### Prerequisites
+*   Node.js (v18.x or later recommended)
+*   npm, yarn, pnpm, or bun
+
+### Local Installation
+1.  Clone the repository:
+    ```bash
+    git clone https://github.com/winitdwd-lgtm/FUTURE_FS_01.git
+    cd FUTURE_FS_01
+    ```
+    *(If running locally from the nested directory, move into `portfolio-v2/`)*:
+    ```bash
+    cd portfolio-v2
+    ```
+2.  Install dependencies:
+    ```bash
+    npm install
+    ```
+3.  Run the local development server:
+    ```bash
+    npm run dev
+    ```
+4.  Open [http://localhost:3000](http://localhost:3000) in your web browser to view the application.
+
+---
+
+## 📦 Static Export & Deployment
+
+The portfolio is pre-configured to build as a static website for deployment on Vercel, GitHub Pages, Netlify, or AWS S3.
+
+1.  Build and export the static site:
+    ```bash
+    npm run build
+    ```
+    This command will generate an `out/` directory containing the optimized static HTML, CSS, and JS assets.
+2.  Deploy the contents of the `out/` directory directly to your web host.
+
+---
+
+## ✒️ Author
+*   **Vineet Dharwad**
+    *   📧 Email: winit.dwd@gmail.com
+    *   🔗 LinkedIn: [Vineet Dharwad](https://in.linkedin.com/in/vineet-dharwad-3a8a50389)
+    *   💻 GitHub: [winitdwd-lgtm](https://github.com/winitdwd-lgtm)

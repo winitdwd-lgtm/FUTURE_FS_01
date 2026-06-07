@@ -12,7 +12,7 @@ import { PersonalLanding } from '@/components/ui/personal-landing';
 // ==========================================
 const Navbar = () => {
   return (
-    <motion.nav 
+    <motion.nav
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
@@ -73,13 +73,14 @@ export default function Home() {
     { name: "Database Management System Part - 1 & 2", issuer: "Infosys Springboard" },
     { name: "Agile Scrum in Practice", issuer: "Infosys Springboard" },
     { name: "Oracle Certified AI Foundations Associate", issuer: "Oracle" },
-    { name: "Engineer AI Agents with Agent Development Kit (ADK)", issuer: "IBM / Credly" },
+    { name: "Engineer AI Agents with Agent Development Kit (ADK)", issuer: "Google / Credly" },
     { name: "Web Development Fundamentals", issuer: "IBM SkillsBuild" },
     { name: "Digital Literacy", issuer: "IBM SkillsBuild" },
     { name: "Software Engineering Job Simulation", issuer: "JPMorgan Chase (Forage)" },
-    { name: "Data Analytics Job Simulation", issuer: "Deloitte Australia (Forage)" },
+    { name: "Data Analytics Job Simulation", issuer: "Deloitte Australia " },
     { name: "GenAI Powered Data Analytics", issuer: "Tata (Forage)" },
-    { name: "Operations Job Simulation", issuer: "Goldman Sachs (Forage)" }
+    { name: "Operations Job Simulation", issuer: "Goldman Sachs (Forage)" },
+    { name: "Python DSA", issuer: "Unstop" }
   ];
 
   const skillCategories = [
@@ -149,11 +150,11 @@ export default function Home() {
   return (
     <div className="bg-[#050914] text-white min-h-screen selection:bg-sky-500/30">
       <Navbar />
-      
+
       <main className="w-full">
         {/* Geometric Shape Landing Hero */}
         <section id="hero" className="relative h-screen w-full">
-          <HeroGeometric 
+          <HeroGeometric
             badge="Full-Stack Developer & Analyst"
             title1="Vineet Dharwad"
             title2="Engineer & Innovator"
@@ -172,7 +173,7 @@ export default function Home() {
                 <p className="text-slate-400 leading-relaxed text-lg text-pretty">
                   Detail-oriented Computer Science student with strong proficiency in full-stack web development and a solid foundation in data analytics and AI concepts. Experienced in building responsive web applications, developing REST APIs, and working with modern development tools and platforms. Proven ability to apply analytical thinking and problem-solving skills through industry-level virtual simulations and projects.
                 </p>
-                
+
                 {/* Key Strengths */}
                 <div className="pt-4 space-y-4">
                   <span className="text-white/60 font-medium tracking-widest uppercase text-[10px]">Key Strengths</span>
@@ -264,7 +265,7 @@ export default function Home() {
               <div className="mb-10">
                 <BlurFade>
                   <h2 className="text-4xl md:text-7xl font-black text-white tracking-tighter mb-4">
-                    Professional <br /> 
+                    Professional <br />
                     <span className="text-sky-400">Accreditations</span>
                   </h2>
                   <p className="text-slate-500 uppercase tracking-[0.2em] text-xs font-bold italic">Validated by Infosys Springboard & Global Tech Leaders</p>
